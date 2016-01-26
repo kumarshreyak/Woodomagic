@@ -100,4 +100,5 @@
     <string name="title_activity_hardware_modelling">HardwareModelling</string>
     <string name="title_activity_tech_quiz">TechQuiz</string>
     <string name="title_activity_software_development">SoftwareDevelopment</string>
+    <string name="title_activity_embedded_system">EmbeddedSystem</string>
 </resources>

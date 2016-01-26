@@ -59,6 +59,10 @@ public class Events extends AppCompatActivity {
         Intent i = new Intent(this,SoftwareDevelopment.class);
         startActivity(i);
     }
+    public void es(View view){
+        Intent i = new Intent(this,EmbeddedSystem.class);
+        startActivity(i);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

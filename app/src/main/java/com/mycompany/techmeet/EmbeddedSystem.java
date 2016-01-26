@@ -10,12 +10,12 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-public class SoftwareDevelopment extends AppCompatActivity {
+public class EmbeddedSystem extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_software_development);
+        setContentView(R.layout.activity_embedded_system);
 
         //Fullscreen bitches
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -31,6 +31,7 @@ public class SoftwareDevelopment extends AppCompatActivity {
                 "font/Roboto-Light.ttf");
         title.setTypeface(grand);
         text.setTypeface(roboto);
+
     }
 
 }

@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mycompany.techmeet">
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <receiver android:process=":remote" android:name=".Alarm"></receiver>
-    <uses-sdk android:minSdkVersion="19"/>
+
+    <uses-sdk android:minSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <receiver
+        android:name=".Alarm"
+        android:process=":remote" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/techmeeticon"
@@ -86,6 +96,15 @@
         <activity
             android:name=".SoftwareDevelopment"
             android:label="@string/title_activity_software_development"
+            android:parentActivityName=".Events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.Events" />
+        </activity>
+        <activity
+            android:name=".EmbeddedSystem"
+            android:label="@string/title_activity_embedded_system"
             android:parentActivityName=".Events"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
