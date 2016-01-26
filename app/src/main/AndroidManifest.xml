@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.techmeet">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <receiver android:process=":remote" android:name=".Alarm"></receiver>
+    <uses-sdk android:minSdkVersion="19"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/techmeeticon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Events"
+            android:label="@string/title_activity_events"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InternetOfThings"
+            android:label="@string/title_activity_internet_of_things"
+            android:parentActivityName=".Events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.Events" />
+        </activity>
+        <activity
+            android:name=".PortfolioDefender"
+            android:label="@string/title_activity_portfolio_defender"
+            android:parentActivityName=".Events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.Events" />
+        </activity>
+        <activity
+            android:name=".ProductExhibition"
+            android:label="@string/title_activity_product_exhibition"
+            android:parentActivityName=".Events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.Events" />
+        </activity>
+        <activity
+            android:name=".SocialMediaAnalysis"
+            android:label="@string/title_activity_social_media_analysis"
+            android:parentActivityName=".Events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.Events" />
+        </activity>
+        <activity
+            android:name=".HardwareModelling"
+            android:label="@string/title_activity_hardware_modelling"
+            android:parentActivityName=".Events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.Events" />
+        </activity>
+        <activity
+            android:name=".TechQuiz"
+            android:label="@string/title_activity_tech_quiz"
+            android:parentActivityName=".Events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.Events" />
+        </activity>
+        <activity
+            android:name=".SoftwareDevelopment"
+            android:label="@string/title_activity_software_development"
+            android:parentActivityName=".Events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.techmeet.Events" />
+        </activity>
+    </application>
+
+</manifest>
