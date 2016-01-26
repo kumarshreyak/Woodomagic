@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Making sure the above lines were not ignored by android
-        Toast.makeText(MainActivity.this, "Start Alarm", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Alarms set(hopefully)", Toast.LENGTH_LONG).show();
     }
 
 
